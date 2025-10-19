@@ -1,0 +1,17 @@
+//
+//  Learning_JouneyApp.swift
+//  Learning_Jouney
+//
+//  Created by Hissah Alohali on 27/04/1447 AH.
+//
+
+import SwiftUI
+
+@main
+struct Learning_JouneyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
