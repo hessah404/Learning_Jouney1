@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA3BFD5A2EA50BF10023AFDC /* Learning_Jouney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning_Jouney.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3BFD672EA50BF20023AFDC /* Learning_JouneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Learning_JouneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3BFD712EA50BF20023AFDC /* Learning_JouneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Learning_JouneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3BFD5A2EA50BF10023AFDC /* Learning_Jouney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Learning_Jouney.app; path = "/Users/hissahalohali/Desktop/Learning_Jouney/build/Debug-iphoneos/Learning_Jouney.app"; sourceTree = "<absolute>"; };
+		FA3BFD672EA50BF20023AFDC /* Learning_JouneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Learning_JouneyTests.xctest; path = "/Users/hissahalohali/Desktop/Learning_Jouney/build/Debug-iphoneos/Learning_Jouney.app/PlugIns/Learning_JouneyTests.xctest"; sourceTree = "<absolute>"; };
+		FA3BFD712EA50BF20023AFDC /* Learning_JouneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Learning_JouneyUITests.xctest; path = "/Users/hissahalohali/Desktop/Learning_Jouney/build/Debug-iphoneos/Learning_JouneyUITests-Runner.app/PlugIns/Learning_JouneyUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +43,11 @@
 		FA3BFD742EA50BF20023AFDC /* Learning_JouneyUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Learning_JouneyUITests;
+			sourceTree = "<group>";
+		};
+		FA5E7B892EAA68FF000BDA95 /* models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -78,18 +83,8 @@
 				FA3BFD5C2EA50BF10023AFDC /* Learning_Jouney */,
 				FA3BFD6A2EA50BF20023AFDC /* Learning_JouneyTests */,
 				FA3BFD742EA50BF20023AFDC /* Learning_JouneyUITests */,
-				FA3BFD5B2EA50BF10023AFDC /* Products */,
+				FA5E7B892EAA68FF000BDA95 /* models */,
 			);
-			sourceTree = "<group>";
-		};
-		FA3BFD5B2EA50BF10023AFDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FA3BFD5A2EA50BF10023AFDC /* Learning_Jouney.app */,
-				FA3BFD672EA50BF20023AFDC /* Learning_JouneyTests.xctest */,
-				FA3BFD712EA50BF20023AFDC /* Learning_JouneyUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +104,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FA3BFD5C2EA50BF10023AFDC /* Learning_Jouney */,
+				FA5E7B892EAA68FF000BDA95 /* models */,
 			);
 			name = Learning_Jouney;
 			packageProductDependencies = (
@@ -196,7 +192,7 @@
 			mainGroup = FA3BFD512EA50BF10023AFDC;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = FA3BFD5B2EA50BF10023AFDC /* Products */;
+			productRefGroup = FA3BFD512EA50BF10023AFDC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct page1: View {
-    @State private var learningGoal = ""
-    @State private var selectedPeriod = ""
+    @AppStorage("learningGoal") public var learningGoal: String = ""
+    @AppStorage("selectedPeriod") public var selectedPeriod: String = ""
     @State private var nextPage = false;
     var body: some View {
         NavigationStack{
@@ -18,13 +18,13 @@ struct page1: View {
                 VStack {
                     ZStack {
                         Circle()
-                            .padding(2)
+                            .fill(Color("Orange").opacity(0.1)) // subtle orange tint
                             .frame(width: 109, height: 109)
-                            .foregroundColor(.black)
-                        
+                            .glassEffect(.regular.interactive()) 
+
                         Image("flame")
                     }
-                    .glassEffect()
+                    
                     
                     
                     //
@@ -32,12 +32,13 @@ struct page1: View {
                         .font(.system(size: 34, weight: .bold, design: .default))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    //                
+                    //
                     Text("This app will help you learn everyday!")
                         .font(.system(size: 17, weight: .regular, design: .default))
                         .foregroundColor(.gray)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding()
+                        .padding(.bottom, 20)
+                    
                     Text("I want to learn")
                         .font(.system(size: 22, weight: .regular, design: .default))
                         .foregroundColor(.white)
@@ -45,7 +46,7 @@ struct page1: View {
                     
                     TextField("Swift", text: $learningGoal)
                     
-                        .padding() 
+                        .padding()
                     Text("I want to learn it in a")
                         .font(.system(size: 22, weight: .regular, design: .default))
                         .foregroundColor(.white)

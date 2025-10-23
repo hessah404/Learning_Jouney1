@@ -18,7 +18,7 @@ struct PeriodButtonStyle: ButtonStyle {
             .padding()
             .glassEffect()
             .frame(width: width, height: height)
-            .background(isSelected ? Color.orange : Color.black)
+            .background(isSelected ? Color("Orange") : Color.black)
             .foregroundColor(.white)
             .clipShape(RoundedRectangle(cornerRadius: 24)) // Adjusted corner radius
             .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
@@ -30,14 +30,30 @@ struct StartLearningButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .glassEffect()
             .frame(width: 182, height: 48)
-            .background(Color.orange) // Always orange
+            .glassEffect()
+            .background(Color("Orange")) // Always orange
             .foregroundColor(.white)
             .clipShape(RoundedRectangle(cornerRadius: 24))
             .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
             .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
     }
+    
 }
 
+struct NavigationBarButtonStyle: ButtonStyle{
+    var isSelected: Bool
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .frame(width: 44, height: 44)
+            .glassEffect()
+            .background(isSelected ? Color("Orange") : Color.black)
+            .foregroundColor(.white)
+            //.clipShape(RoundedRectangle(cornerRadius: 24))
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
+    }
+    
+}
 
