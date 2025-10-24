@@ -15,22 +15,22 @@ struct page2: View {
             ZStack {
                 Color("BG_Color").ignoresSafeArea()
                 VStack{
-                HStack(spacing: 16) {
+                
+                HStack() {
                     Text("Activity")
                         .font(.system(size: 34, weight: .bold, design: .default))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    
+                    Spacer()
                     Button(action: {
                         calendarSelected = true;
                     }){
                         Image(systemName: "calendar")
                     }.buttonStyle(NavigationBarButtonStyle(isSelected: calendarSelected == true))
                     
-                    NavigationLink(destination: AllActivitiespage(), isActive: $calendarSelected) {
+                    NavigationLink(destination: UpdateGoalPage(), isActive: $calendarSelected) {
                         EmptyView() // Hidden view for navigation
-                    }
-                    
+                    }.padding(2)
                     Button(action: {
                         personSelected = true;
                     }){
@@ -47,7 +47,7 @@ struct page2: View {
                     logDataView()
                 
                     
-            }
+                }.padding()
             }
         }
     }

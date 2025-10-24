@@ -54,7 +54,7 @@ struct page1: View {
                     
                     HStack {
                         Button(action: {
-                            selectedPeriod = "week"
+                            selectedPeriod = "Week"
                         }) {
                             Text("Week")
                                 .frame(maxWidth: .infinity)
@@ -63,7 +63,7 @@ struct page1: View {
                         
                         
                         Button(action: {
-                            selectedPeriod = "month"
+                            selectedPeriod = "Month"
                         }) {
                             Text("Month")
                                 .frame(maxWidth: .infinity)
@@ -71,7 +71,7 @@ struct page1: View {
                             .buttonStyle(PeriodButtonStyle(isSelected: selectedPeriod == "month", width: 97, height: 48))
                         
                         Button(action: {
-                            selectedPeriod = "year"
+                            selectedPeriod = "Year"
                         }) {
                             Text("Year")
                                 .frame(maxWidth: .infinity)
